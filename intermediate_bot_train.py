@@ -26,7 +26,7 @@ entitychecklist={}
 entries_entityname={}
 url = apiMethod + apiServer + apiVersion+ "/entities?v=20150910"
 Headers={
-    'Authorization': 'Bearer 01576825c1dc48fa9844a71dc19394a8',
+    'Authorization': 'Bearer 00266835c2dc47fa9843a71dc10494a9', # This is a dummy key do change it based on your DialogFlow account.
     'Content-Type': 'application/json'
     }
 print("Bot training initiating ..........")
@@ -127,7 +127,7 @@ for val in entitylist:
 
 #print(entitychecklist)
 #print(entries_entityname)
-db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
 cursor = db.cursor()
 #print("Database Connected")
 

@@ -37,7 +37,7 @@ class General(QWidget):
     def __init__(self):
         
         super().__init__()
-        self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+        self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
         self.cursor = self.db.cursor()
         print("Database Connected")
         self.initUI()
@@ -51,9 +51,9 @@ class General(QWidget):
             
         self.setWindowTitle('Dana')
         
-        self.setWindowIcon(QIcon('download.png'))
+        self.setWindowIcon(QIcon('download.png')) # Have this png at same directory as this code is. Icon Image
         
-        oImage = QImage("download(1).jpg")
+        oImage = QImage("download(1).jpg") # Have this png at same directory as this code is. Background Image
         sImage = oImage.scaled(QSize(1350,750))                   
         palette = QPalette()
         palette.setBrush(10, QBrush(sImage))
@@ -289,7 +289,7 @@ class General(QWidget):
         
     def deleteClicked(self):
         if not self.db.open:
-            self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+            self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
             self.cursor = self.db.cursor()
             print("Database Connected")
         try:
@@ -319,7 +319,7 @@ class General(QWidget):
             
     def saveClicked(self):
         if not self.db.open:
-            self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+            self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
             self.cursor = self.db.cursor()
             print("Database Connected")
             

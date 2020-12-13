@@ -21,7 +21,7 @@ apiVersion="/v1/"
 apiServer="api.dialogflow.com"
 url = apiMethod + apiServer + apiVersion
 Headers={
-    'Authorization': 'Bearer cb28f1577da7457087c01cff1ee12e84', # This key  will change based on your DialogFlow account it is dummy key. 
+    'Authorization': 'Bearer cb28f1577da7457087c01cff1ee12e84', # This key will change based on your DialogFlow account it is dummy key for now. 
     'Content-Type': 'application/json'
     }
 subjectsinpreference=[]

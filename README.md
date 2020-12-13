@@ -44,5 +44,5 @@ if facing difficulty in installing libraries here is the link for the HELP:
   python gui_issue_return.py // this one is on Raspberry Pi
 ```
 ## Vedio:
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dmeZ23E9hss/1.jpg)](https://youtu.be/dmeZ23E9hss)
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/dmeZ23E9hss/0.jpg)](https://youtu.be/dmeZ23E9hss)
 

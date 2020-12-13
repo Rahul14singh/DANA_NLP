@@ -21,7 +21,7 @@ apiVersion="/v1/"
 apiServer="api.dialogflow.com"
 url = apiMethod + apiServer + apiVersion
 Headers={
-    'Authorization': 'Bearer cb38f1587da7467087c02cff2ee11e82',
+    'Authorization': 'Bearer cb28f1577da7457087c01cff1ee12e84', # This key  will change based on your DialogFlow account it is dummy key. 
     'Content-Type': 'application/json'
     }
 subjectsinpreference=[]
@@ -66,7 +66,7 @@ class General(QWidget):
     def __init__(self):
         
         super().__init__()
-        self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+        self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
         self.cursor = self.db.cursor()
         print("Database Connected")
         self.initUI()
@@ -131,7 +131,7 @@ class General(QWidget):
     def listing(self):
         #print("listing")
         if not self.db.open:
-            self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+            self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
             self.cursor = self.db.cursor()
             print("Database Connected")   
         checkset=0
@@ -167,7 +167,7 @@ class General(QWidget):
         try:
             if len(bookidsinpreference) or len(authorsinpreference) or len(titlesinpreference) or len(publicationsinpreference) or len(subjectsinpreference):
                 if not self.db.open:
-                    self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+                    self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
                     self.cursor = self.db.cursor()
                     print("Database Connected")
                 self.cursor.execute(sql)
@@ -216,7 +216,7 @@ class General(QWidget):
         #print(addthis)
         #print(dateinquired)
         if not self.db.open:
-            self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+            self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
             self.cursor = self.db.cursor()
             print("Database Connected")
         for val in addthis:

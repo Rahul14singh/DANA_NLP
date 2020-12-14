@@ -18,6 +18,7 @@ There are 3 parts of the whole system.
 3. Some Images you want to set in the background of your GUI Window. I have attached the default ones that I used.
 4. A Hosting so that you can connect and maintain the database (Here I used MySql) for the Library Database storing data of books & Student Database storing data of students and books issued by students.
 5. Some other necessary supporting libraries as per code.
+6. Raspberry Pi with RFID Cards and RFID reader writer hardware.
 
 Install  [Python](https://www.python.org/downloads/) . Do install Python3 or later.
 
@@ -29,7 +30,7 @@ if facing difficulty in installing libraries here is the link for the HELP:
 
 ## Instructions and Setup Environment:
 
--  Raspberry should have code ` gui_issue_return.py `.
+-  Raspberry should have code ` gui_issue_return.py ` & ` gui_read_write.py `.
 -  The code ` Dana_Manage_sql.py `, ` Dana_Student.py `, ` intermediate_bot_train.py ` and the images (Background Image & Icon Image) should be in the same directory or make changes as per the directory structure in the code.
 -  First ` Dana_Manage_sql.py ` should be run to create/update records of books in the database. A similar table will be made for student records while writing RFID Cards with the script ` gui_read_write.py ` . Details can be seen in the code and the video posted below.
 -  Then Dana should be trained from the same interface as above for all the new entries and updates in the database. This will internally run ` intermediate_bot_train.py ` automatically. 

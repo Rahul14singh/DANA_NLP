@@ -27,7 +27,7 @@ if facing difficulty in installing libraries here is the link for the HELP:
 
 1. [DialogFlow](https://dialogflow.cloud.google.com/)
 
-> Do note down the userName and password of the DialogFlow account that you made. We will need in the code.
+> Do note down the Unique Api Auth Key of the DialogFlow account that you made. We will need this in the code.
 
 ## Instructions and Setup Environment:
 

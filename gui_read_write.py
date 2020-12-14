@@ -44,7 +44,7 @@ class General(QWidget):
     
     def __init__(self):
         super().__init__()
-        self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+        self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
         self.cursor = self.db.cursor()
         print("Database Connected")
         self.READER = MFRC522.MFRC522()
@@ -281,7 +281,7 @@ class General(QWidget):
         #print("read")
         try:
             if not self.db.open:
-                self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+                self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
                 self.cursor = self.db.cursor()
                 print("Database Connected")
             tex=[]
@@ -388,7 +388,7 @@ class General(QWidget):
     def writeClicked(self):
         #print("writeclick")
         if not self.db.open:
-            self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+            self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
             self.cursor = self.db.cursor()
             print("Database Connected")
         try:
@@ -452,7 +452,7 @@ class General(QWidget):
     
     def reselectdatabase(self,sql,data):
         if not self.db.open:
-            self.db=pymysql.connect("192.185.78.17","lifeisio_Rahul","lifeisiot","lifeisio_LIBNLP")
+            self.db=pymysql.connect("#IP ADDRESS FOR DB","#USERID","#PASSWORD","#DB_NAME") # Replace your DB details here
             self.cursor = self.db.cursor()
             print("Database Connected")
         try:

@@ -4,7 +4,7 @@ Dana (Pronounced Diana) is an NLP powered virtual librarian. She is capable of a
 
 ## Usage:
 
-There are 3 parts of the whole system.
+There are following parts of the whole system.
   1. Management Interface           : GUI interface where the entry for every existing book and any new book is done to be stored on DB such that Dana can be trained out of this DB and she knows all the books and specifics of books in the library. ` Dana_Manage_sql.py `
   2. Student Interface              : GUI interface which is used by students to chit-chat with Dana and find the queries answered. Queries can be Books specific and general things. It's same as talking like a 6 to 7 yrs kid. Alternatively, if Facebook is integrated that can be used instead of this interface. ` Dana_Student.py `
   3. Library Issue/Return Interface : GUI interface running on a Raspberry Pi installed at the exit of the library so that students can issue the books, return the books without any trouble and human interference. Students will come to the library to study or issue books only after checking the availability of same using the Student Interface. Thus an efficient and time-saving experience for students. Books will only be issued after proper authentication. ` gui_issue_return.py `
